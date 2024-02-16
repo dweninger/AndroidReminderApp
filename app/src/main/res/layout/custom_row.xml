@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rowLayout"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/shape">
+
+    <TextView
+        android:id="@+id/textDisplayStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:text="10:00"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"/>
+    <TextView
+        android:id="@+id/textTimeDelimiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" - "
+        android:layout_toRightOf="@+id/textDisplayStartTime"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/textDisplayEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:00"
+        android:layout_toRightOf="@+id/textTimeDelimiter"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/textDisplayDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textDisplayTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CS600 - Build Compiler"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/textDisplayStartTime"
+        android:layout_marginLeft="16dp"
+        android:textColor="@android:color/white"/>
+
+
+    <TextView
+        android:id="@+id/textDisplayDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDisplayStartTime"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:text="I need to use Flex and Yacc to make the lexical analyzer and parser to create my compiler. I need to use Flex and Yacc to make the lexical analyzer and parser to create my compiler. I need to use Flex and Yacc to make the lexical analyzer and parser to create my compiler. I need to use Flex and Yacc to make the lexical analyzer and parser to create my compiler."
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/textDisplayStartTime"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.finalattempt5.fragments.list.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.finalattempt5.fragments.add.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mondayFragment"
+        android:name="com.example.finalattempt5.MondayFragment"
+        android:label="fragment_monday"
+        tools:layout="@layout/fragment_monday" />
+    <fragment
+        android:id="@+id/sundayFragment"
+        android:name="com.example.finalattempt5.SundayFragment"
+        android:label="fragment_sunday"
+        tools:layout="@layout/fragment_sunday" />
+    <fragment
+        android:id="@+id/tuesdayFragment"
+        android:name="com.example.finalattempt5.TuesdayFragment"
+        android:label="fragment_tuesday"
+        tools:layout="@layout/fragment_tuesday" />
+    <fragment
+        android:id="@+id/wednesdayFragment"
+        android:name="com.example.finalattempt5.WednesdayFragment"
+        android:label="fragment_wednesday"
+        tools:layout="@layout/fragment_wednesday" />
+    <fragment
+        android:id="@+id/thursdayFragment"
+        android:name="com.example.finalattempt5.ThursdayFragment"
+        android:label="fragment_thursday"
+        tools:layout="@layout/fragment_thursday" />
+    <fragment
+        android:id="@+id/fridayFragment"
+        android:name="com.example.finalattempt5.FridayFragment"
+        android:label="fragment_friday"
+        tools:layout="@layout/fragment_friday" />
+    <fragment
+        android:id="@+id/saturdayFragment"
+        android:name="com.example.finalattempt5.SaturdayFragment"
+        android:label="fragment_saturday"
+        tools:layout="@layout/fragment_saturday" />
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.example.finalattempt5.fragments.update.UpdateFragment"
+        android:label="fragment_update"
+        tools:layout="@layout/fragment_update" >
+        <action
+            android:id="@+id/action_updateFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <argument
+            android:name="currentTask"
+            app:argType="com.example.finalattempt5.model.Task" />
+    </fragment>
+</navigation>

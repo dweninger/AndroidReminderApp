@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.add.AddFragment"
+    android:background="@color/charcoal">
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/gray"/>
+
+    <TextView
+        android:id="@+id/textViewDay"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Day"
+        android:layout_below="@+id/editTitle"
+        android:layout_marginLeft="16dp"
+        android:textColor="@android:color/white"/>
+
+    <Spinner
+        android:id="@+id/spinnerDay"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTitle"
+        android:layout_toRightOf="@+id/textViewDay"
+        android:layout_marginLeft="16dp"
+        android:backgroundTint="@color/gray"
+        android:popupBackground="@color/gray"/>
+
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:layout_below="@+id/spinnerDay"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/buttonStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 : 00 AM"
+        android:layout_toRightOf="@+id/textViewTime"
+        android:layout_below="@+id/spinnerDay"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/gray"/>
+
+    <Button
+        android:id="@+id/buttonEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 : 00 AM"
+        android:layout_toRightOf="@+id/buttonStartTime"
+        android:layout_below="@+id/spinnerDay"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/gray"/>
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/buttonEndTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:hint="Description"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="@color/gray"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>
